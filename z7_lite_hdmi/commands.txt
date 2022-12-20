@@ -1,0 +1,19 @@
+petalinux-create -t project -n z7_lite_hdmi --template zynq
+petalinux-config --get-hw-description ./z7_lite_fft_vdma.xsa
+petalinux-create -t modules --name axi-dynclk --enable
+petalinux-create -t modules --name digilent-encoder --enable
+petalinux-create -t modules --name u-dma-buf --enable
+petalinux-package --boot --fsbl ./images/linux/zynq_fsbl.elf --fpga --u-boot --force
+petalinux-build -c bootloader -x distclean
+
+
+#
+# dynamic printk
+#
+Users can add their driver as a Module, and add the driver via insmod. To do this change the driver to <M> instead of <*>
+in petalinux-config -c kernel
+Then boot the kernel and enable the log level:
+
+echo 8 > /proc/sys/kernel/printk
+We can add the debug (+p) to your driver:
+echo "file drivers/media/platform/xilinx/* +p" > /sys/kernel/debug/dynamic_debug/control

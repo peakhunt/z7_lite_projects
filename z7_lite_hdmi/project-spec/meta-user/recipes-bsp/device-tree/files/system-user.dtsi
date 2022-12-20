@@ -1,0 +1,203 @@
+/include/ "system-conf.dtsi"
+
+#include <dt-bindings/input/input.h>
+
+/ {
+  chosen {
+    bootargs = "console=ttyPS0,115200 earlycon uio_pdrv_genirq.of_id=generic-uio root=/dev/ram0 rw drm.debug=0x2f";
+    /* to debug kernel with vitis
+    bootargs = "console=ttyPS0,115200 earlycon uio_pdrv_genirq.of_id=generic-uio root=/dev/ram0 rw drm.debug=0x2f cpuidle.off=1";
+    */
+    stdout-path = "serial0:115200n8";
+  };
+
+  usb_phy0: phy0 {
+    compatible = "usb-nop-xceiv";
+    #phy-cells = <0>;
+  };
+
+  // fft_1: fft-axi-dma@40400000 {
+  fft_1: gen@40400000 {
+    compatible = "generic-uio";
+    reg = <0x40400000 0x10000>;
+    // interrupt-names = "mm2s_introut", "s2mm_introut";
+    interrupt-parent = <&axi_intc_0>;
+    interrupts = <2 2>;
+    // interrupts = <1 2>,<2 2>;
+    status = "okay";
+  };
+
+  video_timings {
+    timing_1920x1080: timing1 {
+      clock-frequency = <148500000>;
+      hactive = <1920>;
+      vactive = <1080>;
+
+      hback-porch = <148>;
+      hsync-len = <44>;
+      hfront-porch = <88>;
+      vback-porch = <36>;
+      vsync-len = <5>;
+      vfront-porch = <4>;
+
+      hsync-active = <0>;
+      vsync-active = <0>;
+      de-active = <1>;
+      pixelclk-active = <1>;
+    };
+  };
+
+  fft_rx_udma@0x00 {
+    compatible = "ikwzm,u-dma-buf";
+    device-name = "fft_rx_udma";
+    size = <0x10000>;
+    sync-mode = <1>;
+    sync-always;
+  };
+
+  fft_tx_udma@0x00 {
+    compatible = "ikwzm,u-dma-buf";
+    device-name = "fft_tx_udma";
+    size = <0x10000>;
+    sync-mode = <1>;
+    sync-always;
+  };
+
+  axi_fifo: gen@43c00000 {
+    compatible = "generic-uio";
+    reg = <0x43c00000 0x10000>;
+    interrupt-parent = <&axi_intc_0>;
+    interrupts = <3 2>;
+    status = "okay";
+  };
+
+  leds {
+    compatible = "gpio-leds";
+    ps-led1 {
+      label = "ps-led1";
+      gpios = <&gpio0 0 1>;
+      linux,default-trigger = "heartbeat";
+    };
+    pl-led1 {
+      label = "pl-led1";
+      gpios = <&gpio0 54 1>;
+      linux,default-trigger = "mmc0";
+    };
+    pl-led2 {
+      label = "pl-led2";
+      gpios = <&axi_gpio_0 0 1>;
+      default-state = "off";
+    };
+  };
+
+  gpio-keys {
+    compatible = "gpio-keys";
+
+    ps-key1 {
+      label = "ps-key1";
+      linux,code= <BTN_0>;
+      gpios = <&gpio0 9 1>;
+    };
+
+    pl-key1 {
+      label = "pl-key1";
+      linux,code= <BTN_1>;
+      gpios = <&gpio0 55 1>;
+    };
+
+    pl-key2 {
+      label = "pl-key2";
+      linux,code= <BTN_2>;
+      gpios = <&axi_gpio_0 1 1>;
+    };
+  };
+};
+
+&amba_pl {
+  /* we don't need this
+  xlnx_vdma_hdmi {
+    compatible = "xilinx,vdmafb";
+    status = "okay";
+
+    xlnx,bridge = <&v_tc_0>;
+    clocks = <&axi_dynclk_0>;
+    clock-names = "hdmi_pclk";
+    dmas = <&axi_vdma_0 0>;
+    dma-names = "hdmi_dma";
+
+    is-hdmi = <0x1>;
+
+    display-timings = <&timing_1920x1080>;
+    xlnx,pixel-format = "bgr888";
+  };
+  */
+};
+
+&axi_dynclk_0 {
+  status = "disabled";      // we don't need this
+	#clock-cells = <0>;
+};
+
+&gem0 {
+  phy-mode = "rgmii";
+};
+
+&axi_dma_0 {
+  // we need to disable axi dma kernel driver to control it
+  // through UIO
+  status = "disabled";
+};
+
+&axi_vdma_0 {
+  status = "disabled";      // we don't need this
+  dma-ranges = <0 0 0x20000000>;
+};
+
+&usb0 {
+  status = "okay";
+  dr_mode = "host";
+  usb-phy = <&usb_phy0>;
+  pinctrl-names = "default";
+  pinctrl-0 = <&pinctrl_usb0_default>;
+};
+
+&pinctrl0 {
+  pinctrl_usb0_default: usb0-default {
+    mux {
+      groups = "usb0_0_grp";
+      function = "usb0";
+    };
+
+    conf {
+      groups = "usb0_0_grp";
+      slew-rate = <0>;
+      io-standard = <1>;
+    };
+
+    conf-rx {
+      pins = "MIO29", "MIO31", "MIO36";
+      bias-high-impedance;
+    };
+
+    conf-tx {
+      pins = "MIO28", "MIO30", "MIO32", "MIO33", "MIO34",
+             "MIO35", "MIO37", "MIO38", "MIO39";
+      bias-disable;
+    };
+  };
+};
+
+&i2c0 {
+  status = "okay";
+  clock-frequency = <400000>;
+};
+
+&v_tc_0 {
+  status = "disabled";      // we don't need this
+  compatible = "xlnx,bridge-v-tc-6.1";
+  xlnx,pixels-per-clock = <1>;
+};
+
+&axi_gpio_0 {
+  #gpio-cells = <2>;
+};
