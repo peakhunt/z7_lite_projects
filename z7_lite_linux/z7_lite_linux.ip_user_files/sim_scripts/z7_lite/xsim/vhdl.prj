@@ -1,0 +1,24 @@
+vhdl xil_defaultlib  \
+"../../../bd/z7_lite/ip/z7_lite_xfft_0_0/sim/z7_lite_xfft_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_dma_0_0/sim/z7_lite_axi_dma_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_rst_ps7_0_150M_0/sim/z7_lite_rst_ps7_0_150M_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_fifo_mm_s_0_0/sim/z7_lite_axi_fifo_mm_s_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_intc_0_0/sim/z7_lite_axi_intc_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_timer_0_0/sim/z7_lite_axi_timer_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_vdma_0_0/sim/z7_lite_axi_vdma_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_v_tc_0_0/sim/z7_lite_v_tc_0_0.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/9097/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/9097/src/axi_dynclk.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_dynclk_0_0/sim/z7_lite_axi_dynclk_0_0.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/ClockGen.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/SyncAsync.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/SyncAsyncReset.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/DVI_Constants.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/OutputSERDES.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/TMDS_Encoder.vhd" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ca91/src/rgb2dvi.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_rgb2dvi_0_0/sim/z7_lite_rgb2dvi_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_proc_sys_reset_0_0/sim/z7_lite_proc_sys_reset_0_0.vhd" \
+"../../../bd/z7_lite/ip/z7_lite_axi_gpio_0_0/sim/z7_lite_axi_gpio_0_0.vhd" \
+
+nosort

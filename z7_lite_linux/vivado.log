@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Dec  5 13:28:46 2022
+# Process ID: 105508
+# Current directory: C:/sandbox/zynq/z7_lite_linux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent94188 C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.xpr
+# Log file: C:/sandbox/zynq/z7_lite_linux/vivado.log
+# Journal file: C:/sandbox/zynq/z7_lite_linux\vivado.jou
+# Running On: DESKTOP-PN0338N, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8460 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/sandbox/zynq/z7_lite_linux/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 1585.148 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd}
+Reading block design file <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:xfft:9.1 - xfft
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_150M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_fifo_mm_s:4.2 - axi_fifo_mm_s_0
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_2
+Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Successfully read diagram <z7_lite> from block design file <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1585.148 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.2 rgb2dvi_0
+endgroup
+set_property location {5 1859 1394} [get_bd_cells rgb2dvi_0]
+set_property location {5 1898 1355} [get_bd_cells rgb2dvi_0]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2dvi_0/RGB]
+set_property location {5 2059 1326} [get_bd_cells rgb2dvi_0]
+set_property location {5 2061 1341} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins axi_dynclk_0/LOCKED_O] [get_bd_pins rgb2dvi_0/aRst]
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kClkPrimitive {PLL} CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'kClkPrimitive' from 'MMCM' to 'PLL' has been ignored for IP 'rgb2dvi_0'
+WARNING: [BD 41-1684] Pin /rgb2dvi_0/aRst is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets axi_dynclk_0_LOCKED_O]
+endgroup
+set_property location {5 2060 1351} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins axi_dynclk_0/LOCKED_O] [get_bd_pins rgb2dvi_0/aRst_n]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins axi_dynclk_0/PXL_CLK_O]
+connect_bd_net [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O] [get_bd_pins rgb2dvi_0/SerialClk]
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter In0_width(4) on '/xlconcat_0' with propagated value(8). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXI_ACLK_FREQ_MHZ(150) on '/axi_intc_0' with propagated value(150.0). Command ignored
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+regenerate_bd_layout
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+generate_target all [get_files  C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd]
+INFO: [BD 41-1662] The design 'z7_lite.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/sim/z7_lite.v
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hdl/z7_lite_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hw_handoff/z7_lite.hwh
+Generated Hardware Definition File c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1689.520 ; gain = 71.312
+export_ip_user_files -of_objects [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -directory C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files/sim_scripts -ip_user_files_dir C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files -ipstatic_source_dir C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/modelsim} {questa=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/questa} {riviera=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/riviera} {activehdl=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -top
+launch_runs synth_1 -jobs 4
+[Mon Dec  5 15:33:52 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/utils_1/imports/synth_1/z7_lite_wrapper.dcp with file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/z7_lite_wrapper.dcp
+startgroup
+set_property -dict [list CONFIG.kClkRange {2}] [get_bd_cells rgb2dvi_0]
+endgroup
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter In0_width(4) on '/xlconcat_0' with propagated value(8). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXI_ACLK_FREQ_MHZ(150) on '/axi_intc_0' with propagated value(150.0). Command ignored
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/sim/z7_lite.v
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hdl/z7_lite_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hw_handoff/z7_lite.hwh
+Generated Hardware Definition File c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.hwdef
+[Mon Dec  5 15:35:38 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1703.164 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+[Mon Dec  5 16:34:31 2022] Launched impl_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1884.691 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 772 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1928.621 ; gain = 184.316
+INFO: [Common 17-344] 'open_run' was cancelled
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter In0_width(4) on '/xlconcat_0' with propagated value(8). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXI_ACLK_FREQ_MHZ(150) on '/axi_intc_0' with propagated value(150.0). Command ignored
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/utils_1/imports/synth_1/z7_lite_wrapper.dcp with file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/z7_lite_wrapper.dcp
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'z7_lite.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/sim/z7_lite.v
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hdl/z7_lite_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hw_handoff/z7_lite.hwh
+Generated Hardware Definition File c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.hwdef
+[Tue Dec  6 09:28:06 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1947.578 ; gain = 18.957
+open_bd_design {C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1
+
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins processing_system7_0/IIC_0]
+endgroup
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rgb2dvi_0/TMDS]
+endgroup
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter In0_width(4) on '/xlconcat_0' with propagated value(8). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_S_AXI_ACLK_FREQ_MHZ(150) on '/axi_intc_0' with propagated value(150.0). Command ignored
+INFO: [xilinx.com:ip:xfft:9.1-913] /xfft data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/REF_CLK_I have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /axi_dynclk_0/s00_axi_aclk have been updated from connected ip, but BD cell '/axi_dynclk_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 150000000 
+Please resolve any mismatches by directly setting properties on BD cell </axi_dynclk_0> to completely resolve these warnings.
+save_bd_design
+Wrote  : <C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.srcs\sources_1\bd\z7_lite\z7_lite.bd> 
+Wrote  : <C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/ui/bd_9aadfc90.ui> 
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'z7_lite.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(2) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(2) - Only lower order bits will be connected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xfft/s_axis_config_tdata'(24) to pin '/axi_fifo_mm_s_0/axi_str_txd_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/xlconcat_0/In0'(4) to pin '/processing_system7_0/ENET0_GMII_TXD'(8) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/sim/z7_lite.v
+VHDL Output written to : c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hdl/z7_lite_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/hw_handoff/z7_lite.hwh
+Generated Hardware Definition File c:/sandbox/zynq/z7_lite_linux/z7_lite_linux.gen/sources_1/bd/z7_lite/synth/z7_lite.hwdef
+[Tue Dec  6 09:39:16 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1950.172 ; gain = 1.793
+reset_run synth_1
+make_wrapper -files [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -top
+launch_runs synth_1 -jobs 4
+[Tue Dec  6 09:44:12 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec  6 09:45:44 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Dec  6 09:51:33 2022] Launched impl_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/utils_1/imports/synth_1/z7_lite_wrapper.dcp with file C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/z7_lite_wrapper.dcp
+launch_runs synth_1 -jobs 4
+[Tue Dec  6 10:00:29 2022] Launched synth_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Dec  6 10:06:56 2022] Launched impl_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Dec  6 10:14:15 2022] Launched impl_1...
+Run output will be captured here: C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/sandbox/zynq/z7_lite_linux/z7_lite_fft_vdma.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/sandbox/zynq/z7_lite_linux/z7_lite_fft_vdma.xsa ...
+INFO: [Vivado 12-12464] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/sandbox/zynq/z7_lite_linux/z7_lite_fft_vdma.xsa
+write_hw_platform: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2211.504 ; gain = 169.699
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2021.2/data/embeddedsw) loading 2 seconds

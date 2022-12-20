@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Dec  5 13:28:46 2022
+# Process ID: 105508
+# Current directory: C:/sandbox/zynq/z7_lite_linux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent94188 C:\sandbox\zynq\z7_lite_linux\z7_lite_linux.xpr
+# Log file: C:/sandbox/zynq/z7_lite_linux/vivado.log
+# Journal file: C:/sandbox/zynq/z7_lite_linux\vivado.jou
+# Running On: DESKTOP-PN0338N, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8460 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd}
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2dvi:1.2 rgb2dvi_0
+endgroup
+set_property location {5 1859 1394} [get_bd_cells rgb2dvi_0]
+set_property location {5 1898 1355} [get_bd_cells rgb2dvi_0]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2dvi_0/RGB]
+set_property location {5 2059 1326} [get_bd_cells rgb2dvi_0]
+set_property location {5 2061 1341} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins axi_dynclk_0/LOCKED_O] [get_bd_pins rgb2dvi_0/aRst]
+startgroup
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kClkPrimitive {PLL} CONFIG.kGenerateSerialClk {false}] [get_bd_cells rgb2dvi_0]
+delete_bd_objs [get_bd_nets axi_dynclk_0_LOCKED_O]
+endgroup
+set_property location {5 2060 1351} [get_bd_cells rgb2dvi_0]
+connect_bd_net [get_bd_pins axi_dynclk_0/LOCKED_O] [get_bd_pins rgb2dvi_0/aRst_n]
+connect_bd_net [get_bd_pins rgb2dvi_0/PixelClk] [get_bd_pins axi_dynclk_0/PXL_CLK_O]
+connect_bd_net [get_bd_pins axi_dynclk_0/PXL_CLK_5X_O] [get_bd_pins rgb2dvi_0/SerialClk]
+save_bd_design
+validate_bd_design
+regenerate_bd_layout
+regenerate_bd_layout -routing
+save_bd_design
+generate_target all [get_files  C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd]
+export_ip_user_files -of_objects [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -directory C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files/sim_scripts -ip_user_files_dir C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files -ipstatic_source_dir C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/modelsim} {questa=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/questa} {riviera=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/riviera} {activehdl=C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -top
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+startgroup
+set_property -dict [list CONFIG.kClkRange {2}] [get_bd_cells rgb2dvi_0]
+endgroup
+save_bd_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+startgroup
+set_property -dict [list CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1} CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+validate_bd_design
+regenerate_bd_layout -routing
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd}
+reset_run synth_1
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins processing_system7_0/IIC_0]
+endgroup
+regenerate_bd_layout -routing
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins rgb2dvi_0/TMDS]
+endgroup
+save_bd_design
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+make_wrapper -files [get_files C:/sandbox/zynq/z7_lite_linux/z7_lite_linux.srcs/sources_1/bd/z7_lite/z7_lite.bd] -top
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/sandbox/zynq/z7_lite_linux/z7_lite_fft_vdma.xsa

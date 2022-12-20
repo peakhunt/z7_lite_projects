@@ -1,0 +1,20 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2021.2/data/xilinx_vip/include" --include "../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/ec67/hdl" --include "../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/3007/hdl" --include "../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/36fa/hdl" \
+"../../../bd/z7_lite/ip/z7_lite_processing_system7_0_0/sim/z7_lite_processing_system7_0_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_xlconcat_0_0/sim/z7_lite_xlconcat_0_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_xlconcat_1_0/sim/z7_lite_xlconcat_1_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_xbar_1/sim/z7_lite_xbar_1.v" \
+"../../../bd/z7_lite/ip/z7_lite_xbar_0/sim/z7_lite_xbar_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_xlconcat_2_0/sim/z7_lite_xlconcat_2_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_v_axi4s_vid_out_0_0/sim/z7_lite_v_axi4s_vid_out_0_0.v" \
+"../../../../z7_lite_linux.gen/sources_1/bd/z7_lite/ipshared/9097/src/mmcme2_drp.v" \
+"../../../bd/z7_lite/sim/z7_lite.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_pc_0/sim/z7_lite_auto_pc_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_cc_0/sim/z7_lite_auto_cc_0.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_cc_1/sim/z7_lite_auto_cc_1.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_cc_2/sim/z7_lite_auto_cc_2.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_cc_3/sim/z7_lite_auto_cc_3.v" \
+"../../../bd/z7_lite/ip/z7_lite_auto_pc_1/sim/z7_lite_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
