@@ -1,0 +1,4 @@
+TRACE::2022-11-04.10:39:15::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To C:/Users/hawk_/workspace/z7_lite_fft/export/z7_lite_fft/sw/z7_lite_fft/qemu/
+TRACE::2022-11-04.10:39:15::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To C:/Users/hawk_/workspace/z7_lite_fft/export/z7_lite_fft/sw/z7_lite_fft/linux_domain/qemu/
+TRACE::2022-11-04.10:39:15::SCWLinux:: Copying the user libraries. 
+TRACE::2022-11-04.10:39:15::SCWLinux::Skipping the Petalinux build as image is already given.
