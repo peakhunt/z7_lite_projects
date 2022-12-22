@@ -24,17 +24,17 @@ typedef struct
 
 typedef struct
 {
-  uint32_t      isr;
-  uint32_t      ier;
-  uint32_t      tdfr;
-  uint32_t      tdfv;
-  uint32_t      tdfd;
-  uint32_t      tlr;
-  uint32_t      rdfr;
-  uint32_t      rdfo;
-  uint32_t      rdfd;
-  uint32_t      rlr;
-  uint32_t      srr;
+  volatile uint32_t      isr;
+  volatile uint32_t      ier;
+  volatile uint32_t      tdfr;
+  volatile uint32_t      tdfv;
+  volatile uint32_t      tdfd;
+  volatile uint32_t      tlr;
+  volatile uint32_t      rdfr;
+  volatile uint32_t      rdfo;
+  volatile uint32_t      rdfd;
+  volatile uint32_t      rlr;
+  volatile uint32_t      srr;
 } axi_fifo_reg_t;
 
 static int                        _fd_uio   = -1;
@@ -133,6 +133,15 @@ xfft_set_config(uint32_t n, uint8_t fwd_inv)
     PDEBUG("xfft: invalid fft size %d\n", n);
     return -1;
   }
+
+#if 0
+  // test
+  _axi_fifo_ptr->tdfr = 0x000000a5;
+  _axi_fifo_ptr->isr =  0xffffffff;
+  _axi_fifo_ptr->ier = (1 << 27);
+  dump_fifo_regs();
+  // end of test
+#endif
 
   cfg = option->transform_size | (fwd_inv ? (1 << 8) : 0) | option->scale_sch;
   PDEBUG("xfft: setting config to %d,%x\n", cfg, cfg);

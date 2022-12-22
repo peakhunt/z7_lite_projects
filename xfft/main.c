@@ -2,6 +2,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <getopt.h>
+#include <math.h>
+#include <signal.h>
 #include "xfft.h"
 #include "xfft_dma_buf.h"
 #include "dma.h"
@@ -12,6 +14,26 @@
 
 static xfft_dma_buf_t _dma_buf_info;
 static int            _fft_size = NUM_FFT_POINTS;
+
+static void
+block_signals(void)
+{
+  sigset_t mask;
+
+  sigfillset(&mask);
+  sigprocmask(SIG_SETMASK, &mask, NULL);
+}
+
+/*
+static void
+unblock_signals(void)
+{
+  sigset_t mask;
+
+  sigemptyset(&mask);
+  sigprocmask(SIG_SETMASK, &mask, NULL);
+}
+*/
 
 static void
 get_dma_buf_info(void)
@@ -25,15 +47,71 @@ get_dma_buf_info(void)
 }
 
 static void
+print_fft_buffer(const char* title, float* buf)
+{
+  int       idx,
+            n = 0;
+  volatile float* vbuf = (volatile float*)buf;
+  float     f_r, f_i;
+
+  printf("%s", title);
+
+  for (idx = 0; idx < _fft_size; idx += 4)
+  {
+    f_r = vbuf[n++];
+    f_i = vbuf[n++];
+
+    printf("%04d: [%9.4f %9.4f] ", idx, f_r, f_i);
+
+    f_r = buf[n++];
+    f_i = buf[n++];
+    printf("%04d: [%9.4f %9.4f] ", idx + 1, f_r, f_i);
+
+    f_r = buf[n++];
+    f_i = buf[n++];
+    printf("%04d: [%9.4f %9.4f] ", idx + 2, f_r, f_i);
+
+    f_r = buf[n++];
+    f_i = buf[n++];
+    printf("%04d: [%9.4f %9.4f]\n", idx + 3, f_r, f_i);
+  }
+}
+
+static void
 init_fft_buffer_data(void)
 {
-  // FIXME init FFT sample data
+#define FFT_TEST_FFT_SIZE           (_fft_size)
+#define FFT_TEST_BIN_SIZE           2.0
+#define FFT_TEST_FREQ               20.0
+#define FFT_TEST_FFT_AMP            8.0
+#define FFT_TEST_FFT_SCALE          ( 2.0 / FFT_TEST_FFT_SIZE )
+#define FFT_TEST_SAMPLE_RATE        ( FFT_TEST_FFT_SIZE * FFT_TEST_BIN_SIZE )
+
+  int       idx,
+            n = 0;
+  float     tmp_f0;
+  float*    in_buf = (float*)_dma_buf_info.tx_buf;
+
+  for (idx = 0; idx < _fft_size; idx++)
+  {
+    tmp_f0 = FFT_TEST_FREQ;
+    tmp_f0 *= (2 * M_PI);
+    tmp_f0 *= ( (float)idx / (float)( FFT_TEST_SAMPLE_RATE ) );
+    tmp_f0 = FFT_TEST_FFT_AMP * (float)cosf( tmp_f0 );
+
+    // complex FFT
+    in_buf[n++] = tmp_f0;     // real part
+    in_buf[n++] = 0;          // complex part
+  }
+  print_fft_buffer("=== FFT data ===\n", in_buf);
 }
 
 static void
 print_fft_result(void)
 {
-  // FIXME print FFT result
+  float*    out_buf = (float*)_dma_buf_info.rx_buf;
+
+  print_fft_buffer("=== FFT result ===\n", out_buf);
 }
 
 static void
@@ -101,10 +179,13 @@ handle_fft_options(int argc, char** argv)
 int
 main(int argc, char** argv)
 {
-  uint32_t count = 0;
   handle_fft_options(argc, argv);
 
-  printf("xFFT fft size = %d\n", _fft_size);
+  //
+  // terminating without proper exit
+  // seems to cause some trouble in IP later
+  //
+  block_signals();
 
   if(xfft_init() != 0)
   {
@@ -131,24 +212,11 @@ main(int argc, char** argv)
   init_fft_buffer_data();
 
   // complex data. real: 4 byes, imaginary: 4 bytes
-  while(1)
-  {
-    printf("main: dma_do_rtx_transaction begin\n");
-
-    if(xfft_set_config(_fft_size, 1) != 0)
-    {
-      goto xfft_config_failed;
-    }
-
-    dma_do_rtx_transaction(
-        _dma_buf_info.tx_phys_addr,           // tx physical address
-        _dma_buf_info.rx_phys_addr,           // rx physical address
-        _fft_size * 8,                        // tx num bytes
-        _fft_size * 8);                       // rx num bytes
-    count += 1;
-    printf("main: dma_do_rtx_transaction end %d\n", count);
-    //usleep(10000);    // 10 msec
-  }
+  dma_do_rtx_transaction(
+      _dma_buf_info.tx_phys_addr,           // tx physical address
+      _dma_buf_info.rx_phys_addr,           // rx physical address
+      _fft_size * 8,                        // tx num bytes
+      _fft_size * 8);                       // rx num bytes
 
   print_fft_result();
 
